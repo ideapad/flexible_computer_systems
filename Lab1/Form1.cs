@@ -14,6 +14,7 @@ namespace Lab1
 {
     public partial class Form1 : Form
     {
+        private Calculation calc;
         public Form1()
         {
             InitializeComponent();
@@ -162,7 +163,7 @@ namespace Lab1
                 }
             }
 
-            Calculation calc = new Calculation();
+            calc = new Calculation();
             
             calc.countUniqueEl(valueEl); //Обчислюю кількість унікальних елементів
             lResult.Text = "Result: ";
@@ -276,6 +277,21 @@ namespace Lab1
                     
                 }
             }
+        }
+
+        private void groupList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calc_groups_btn_Click(object sender, EventArgs e)
+        {
+            calc.createGroups();
+            calc.outGroups(groupList);
+
+            calc.groupsAfterVerification();
+            calc.outgroupsAfterVerification(prec_groupList);
+
         }
     }
 }

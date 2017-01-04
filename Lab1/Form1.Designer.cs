@@ -41,20 +41,24 @@
             this.resultMatrix = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.boolMatrix = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.calc_groups_btn = new System.Windows.Forms.Button();
+            this.prec_groupList = new System.Windows.Forms.ListView();
+            this.groupList = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.numericRows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericCols)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultMatrix)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.boolMatrix)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // lNumberRows
@@ -208,6 +212,14 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // boolMatrix
+            // 
+            this.boolMatrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.boolMatrix.Location = new System.Drawing.Point(6, 59);
+            this.boolMatrix.Name = "boolMatrix";
+            this.boolMatrix.Size = new System.Drawing.Size(437, 348);
+            this.boolMatrix.TabIndex = 5;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.resultMatrix);
@@ -218,14 +230,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // boolMatrix
-            // 
-            this.boolMatrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.boolMatrix.Location = new System.Drawing.Point(6, 59);
-            this.boolMatrix.Name = "boolMatrix";
-            this.boolMatrix.Size = new System.Drawing.Size(437, 348);
-            this.boolMatrix.TabIndex = 5;
             // 
             // tabControl2
             // 
@@ -255,6 +259,9 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.calc_groups_btn);
+            this.tabPage4.Controls.Add(this.prec_groupList);
+            this.tabPage4.Controls.Add(this.groupList);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -262,6 +269,35 @@
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // calc_groups_btn
+            // 
+            this.calc_groups_btn.Location = new System.Drawing.Point(27, 22);
+            this.calc_groups_btn.Name = "calc_groups_btn";
+            this.calc_groups_btn.Size = new System.Drawing.Size(171, 47);
+            this.calc_groups_btn.TabIndex = 2;
+            this.calc_groups_btn.Text = "Сформувати групи";
+            this.calc_groups_btn.UseVisualStyleBackColor = true;
+            this.calc_groups_btn.Click += new System.EventHandler(this.calc_groups_btn_Click);
+            // 
+            // prec_groupList
+            // 
+            this.prec_groupList.Location = new System.Drawing.Point(454, 136);
+            this.prec_groupList.Name = "prec_groupList";
+            this.prec_groupList.Size = new System.Drawing.Size(346, 223);
+            this.prec_groupList.TabIndex = 1;
+            this.prec_groupList.UseCompatibleStateImageBehavior = false;
+            this.prec_groupList.View = System.Windows.Forms.View.Details;
+            // 
+            // groupList
+            // 
+            this.groupList.Location = new System.Drawing.Point(27, 136);
+            this.groupList.Name = "groupList";
+            this.groupList.Size = new System.Drawing.Size(346, 223);
+            this.groupList.TabIndex = 0;
+            this.groupList.UseCompatibleStateImageBehavior = false;
+            this.groupList.View = System.Windows.Forms.View.Details;
+            this.groupList.SelectedIndexChanged += new System.EventHandler(this.groupList_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -285,10 +321,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.resultMatrix)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.boolMatrix)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,6 +351,9 @@
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.ListView prec_groupList;
+        private System.Windows.Forms.ListView groupList;
+        private System.Windows.Forms.Button calc_groups_btn;
     }
 }
 

@@ -338,6 +338,31 @@ namespace Lab1
                 n++;
             }
         }
+
+        public void outGroups(ListView ls_view)//Виведення результату групування
+        {
+            string[] columns = { "Group number", "Group elements" };
+            foreach(string column_name in columns)          
+                ls_view.Columns.Add(column_name,100);
+
+
+            int index = 1;
+            foreach(HashSet<int> group in groups)
+            {
+                string group_elements = String.Empty;
+
+              foreach(int element in group)
+                {
+                    group_elements += (element + 1) + " ";
+                }
+                string[] row = {"Group " + index, group_elements };
+                var listViewItem = new ListViewItem(row);
+                ls_view.Items.Add(listViewItem);
+                index++;       
+            }
+        }
+
+
         ////////////3 Лаба
         private List<HashSet<string>> createSet(List<HashSet<int>> groups)//Зливаю елементи в одну множину за результатами групування
         {
@@ -415,6 +440,29 @@ namespace Lab1
                 }
                 l.Text += "}\n";
                 n++;
+            }
+        }
+
+        public void outgroupsAfterVerification(ListView ls_view)//Виведення уточнених груп
+        {
+            string[] columns = { "Group number", "Group elements" };
+            foreach (string column_name in columns)
+                ls_view.Columns.Add(column_name, 100);
+
+
+            int index = 1;
+            foreach (HashSet<int> group in groupsAfterV)
+            {
+                string group_elements = String.Empty;
+
+                foreach (int element in group)
+                {
+                    group_elements += (element + 1) + " ";
+                }
+                string[] row = { "Group " + index, group_elements };
+                var listViewItem = new ListViewItem(row);
+                ls_view.Items.Add(listViewItem);
+                index++;
             }
         }
 
