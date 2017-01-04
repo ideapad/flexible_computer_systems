@@ -1,0 +1,189 @@
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\Lab1.exe.config
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\Lab1.exe
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\Lab1.pdb
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Lab1.Form1.resources
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Lab1.csproj.GenerateResource.Cache
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Lab1.exe
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Lab1.pdb
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Lab1.Form2.resources
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\QuickGraph.Data.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\QuickGraph.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\QuickGraph.Graphviz.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\QuickGraph.Serialization.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\QuickGraph.xml
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\QuickGraph.Data.xml
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\QuickGraph.Graphviz.xml
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\QuickGraph.Serialization.xml
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\GraphSharp.Controls.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\GraphSharp.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\GraphX.Controls.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\GraphX.PCL.Common.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\GraphX.PCL.Logic.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\WPFExtensions.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Templates\template.baml
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Lab1_MarkupCompile.cache
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Lab1.g.resources
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\obj\Debug\Lab1.GraphVisual.resources
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\курсач\FCS-master\Lab1\Lab1\bin\Debug\Lab1.exe.config
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\курсач\FCS-master\Lab1\Lab1\obj\Debug\Lab1.exe
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\курсач\FCS-master\Lab1\Lab1\obj\Debug\Lab1.pdb
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\Combinatorics.dll
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\Combinatorics.pdb
+D:\Google Диск\KPI\3 курс\1 семестр\ГКС\Лаби\Лаба1\Lab1\Lab1\bin\Debug\Combinatorics.xml
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\Lab1.exe.config
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Lab1.exe
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Lab1.pdb
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\Lab1.exe
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\Lab1.pdb
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\Combinatorics.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\GraphSharp.Controls.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\GraphSharp.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\GraphX.Controls.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\GraphX.PCL.Common.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\GraphX.PCL.Logic.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\QuickGraph.Data.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\QuickGraph.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\QuickGraph.Graphviz.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\QuickGraph.Serialization.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\WPFExtensions.dll
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\Combinatorics.pdb
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\Combinatorics.xml
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\QuickGraph.xml
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\QuickGraph.Data.xml
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\QuickGraph.Graphviz.xml
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\bin\Debug\QuickGraph.Serialization.xml
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Templates\template.baml
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Lab1_MarkupCompile.cache
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Lab1.g.resources
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Lab1.Form1.resources
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Lab1.Form2.resources
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Lab1.GraphVisual.resources
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+C:\Users\Viktor\Desktop\GKS\Lab1\Lab1\obj\Debug\Lab1.csproj.GenerateResource.Cache
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\Lab1.exe.config
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Lab1.exe
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Lab1.pdb
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\Lab1.exe
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\Lab1.pdb
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\Combinatorics.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\GraphSharp.Controls.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\GraphSharp.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\GraphX.Controls.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\GraphX.PCL.Common.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\GraphX.PCL.Logic.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\QuickGraph.Data.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\QuickGraph.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\QuickGraph.Graphviz.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\QuickGraph.Serialization.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\WPFExtensions.dll
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\Combinatorics.pdb
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\Combinatorics.xml
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\QuickGraph.xml
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\QuickGraph.Data.xml
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\QuickGraph.Graphviz.xml
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\bin\Debug\QuickGraph.Serialization.xml
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Templates\template.baml
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Lab1_MarkupCompile.cache
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Lab1.g.resources
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Lab1.Form1.resources
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Lab1.Form2.resources
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Lab1.GraphVisual.resources
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+C:\Users\Viktor\Desktop\Lab2 GKS\Lab1\obj\Debug\Lab1.csproj.GenerateResource.Cache
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\Lab1.exe.config
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Lab1.exe
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Lab1.pdb
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\Lab1.exe
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\Lab1.pdb
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\Combinatorics.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\GraphSharp.Controls.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\GraphSharp.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\GraphX.Controls.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\GraphX.PCL.Common.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\GraphX.PCL.Logic.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\QuickGraph.Data.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\QuickGraph.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\QuickGraph.Graphviz.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\QuickGraph.Serialization.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\WPFExtensions.dll
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\Combinatorics.pdb
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\Combinatorics.xml
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\QuickGraph.xml
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\QuickGraph.Data.xml
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\QuickGraph.Graphviz.xml
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\bin\Debug\QuickGraph.Serialization.xml
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Templates\template.baml
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Lab1_MarkupCompile.cache
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Lab1.g.resources
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Lab1.Form1.resources
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Lab1.Form2.resources
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Lab1.GraphVisual.resources
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+C:\Users\Viktor\Desktop\Lab4 GKS\Lab1\obj\Debug\Lab1.csproj.GenerateResource.Cache
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\Lab1.exe.config
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\Lab1.exe
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\Lab1.pdb
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\Combinatorics.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\GraphSharp.Controls.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\GraphSharp.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\GraphX.Controls.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\GraphX.PCL.Common.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\GraphX.PCL.Logic.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\QuickGraph.Data.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\QuickGraph.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\QuickGraph.Graphviz.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\QuickGraph.Serialization.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\WPFExtensions.dll
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\Combinatorics.pdb
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\Combinatorics.xml
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\QuickGraph.xml
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\QuickGraph.Data.xml
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\QuickGraph.Graphviz.xml
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\bin\Debug\QuickGraph.Serialization.xml
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Templates\template.baml
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Lab1_MarkupCompile.cache
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Lab1.g.resources
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Lab1.Form1.resources
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Lab1.Form2.resources
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Lab1.GraphVisual.resources
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Lab1.csproj.GenerateResource.Cache
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Lab1.exe
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Lab1.pdb
+C:\Users\Viktor\Desktop\Lab5 GKS\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\Lab1.exe.config
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.exe
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.pdb
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\Lab1.exe
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\Lab1.pdb
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\Combinatorics.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\GraphSharp.Controls.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\GraphSharp.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\GraphX.Controls.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\GraphX.PCL.Common.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\GraphX.PCL.Logic.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\QuickGraph.Data.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\QuickGraph.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\QuickGraph.Graphviz.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\QuickGraph.Serialization.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\WPFExtensions.dll
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\Combinatorics.pdb
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\Combinatorics.xml
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\QuickGraph.xml
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\QuickGraph.Data.xml
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\QuickGraph.Graphviz.xml
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\bin\Debug\QuickGraph.Serialization.xml
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Templates\template.baml
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1_MarkupCompile.cache
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.g.resources
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.Form1.resources
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.Form2.resources
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.GraphVisual.resources
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.Properties.Resources.resources
+E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.csproj.GenerateResource.Cache
