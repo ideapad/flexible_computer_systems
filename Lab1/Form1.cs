@@ -286,11 +286,16 @@ namespace Lab1
 
         private void calc_groups_btn_Click(object sender, EventArgs e)
         {
+         
+
             calc.createGroups();
             calc.outGroups(groupList);
 
             calc.groupsAfterVerification();
             calc.outgroupsAfterVerification(prec_groupList);
+
+            groupList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            prec_groupList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
         }
     }

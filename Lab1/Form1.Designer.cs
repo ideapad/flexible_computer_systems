@@ -282,18 +282,18 @@
             // 
             // prec_groupList
             // 
-            this.prec_groupList.Location = new System.Drawing.Point(454, 136);
+            this.prec_groupList.Location = new System.Drawing.Point(428, 136);
             this.prec_groupList.Name = "prec_groupList";
-            this.prec_groupList.Size = new System.Drawing.Size(346, 223);
+            this.prec_groupList.Size = new System.Drawing.Size(416, 223);
             this.prec_groupList.TabIndex = 1;
             this.prec_groupList.UseCompatibleStateImageBehavior = false;
             this.prec_groupList.View = System.Windows.Forms.View.Details;
             // 
             // groupList
             // 
-            this.groupList.Location = new System.Drawing.Point(27, 136);
+            this.groupList.Location = new System.Drawing.Point(8, 136);
             this.groupList.Name = "groupList";
-            this.groupList.Size = new System.Drawing.Size(346, 223);
+            this.groupList.Size = new System.Drawing.Size(414, 223);
             this.groupList.TabIndex = 0;
             this.groupList.UseCompatibleStateImageBehavior = false;
             this.groupList.View = System.Windows.Forms.View.Details;

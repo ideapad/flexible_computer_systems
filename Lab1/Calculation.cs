@@ -13,7 +13,6 @@ namespace Lab1
     {
         public List<HashSet<string>> mas;//Масив елементів
 
-
         private HashSet<String> setEl = new HashSet<string>(); //Множина для обрахунку унікальних елементів
 
         private int countUEl; //Кількість унікальних елементів
@@ -341,7 +340,9 @@ namespace Lab1
 
         public void outGroups(ListView ls_view)//Виведення результату групування
         {
-            string[] columns = { "Group number", "Group elements" };
+            List<HashSet<string>> operationsInGroups = showOperationsInGroups(groups);
+
+            string[] columns = { "Group number", "Group elements", "Group operations"};
             foreach(string column_name in columns)          
                 ls_view.Columns.Add(column_name,100);
 
@@ -355,13 +356,12 @@ namespace Lab1
                 {
                     group_elements += (element + 1) + " ";
                 }
-                string[] row = {"Group " + index, group_elements };
+                string[] row = { "Group " + index, group_elements, string.Join(" ", operationsInGroups[index - 1]) };
                 var listViewItem = new ListViewItem(row);
                 ls_view.Items.Add(listViewItem);
                 index++;       
             }
         }
-
 
         ////////////3 Лаба
         private List<HashSet<string>> createSet(List<HashSet<int>> groups)//Зливаю елементи в одну множину за результатами групування
@@ -445,7 +445,9 @@ namespace Lab1
 
         public void outgroupsAfterVerification(ListView ls_view)//Виведення уточнених груп
         {
-            string[] columns = { "Group number", "Group elements" };
+            List<HashSet<string>> operationsInGroups = showOperationsInGroups(groupsAfterV);
+
+            string[] columns = { "Group number", "Group elements", "Group operations" };
             foreach (string column_name in columns)
                 ls_view.Columns.Add(column_name, 100);
 
@@ -459,11 +461,48 @@ namespace Lab1
                 {
                     group_elements += (element + 1) + " ";
                 }
-                string[] row = { "Group " + index, group_elements };
+                string[] row = { "Group " + index, group_elements, string.Join(" ", operationsInGroups[index - 1]) };
                 var listViewItem = new ListViewItem(row);
                 ls_view.Items.Add(listViewItem);
                 index++;
             }
+        }
+
+        public List<HashSet<string>> showOperationsInGroups(List<HashSet<int>> curr_groups)
+        {
+            //for(int group_index = 0; group_index < groups.Count(); group_index++)
+            //{
+            //    HashSet<string> operations = new HashSet<string>();
+
+            //    for(int row = 0; row < groups[group_index].Count(); row++)
+            //    {
+            //        operations.Add()
+            //    }
+            //}
+
+            int index_group = 0;
+
+            List<HashSet<string>> operationsInGroups = new List<HashSet<string>>();
+
+            foreach (HashSet<int> group in curr_groups)
+            {
+                HashSet<string> operationsForGroup = new HashSet<string>();
+
+                if(index_group == 2)
+                {
+                    Console.WriteLine();
+                }
+
+                foreach(int index in group)
+                {
+                    operationsForGroup.UnionWith(mas[index]);
+                }
+                operationsInGroups.Add(operationsForGroup);
+
+                index_group++;
+            }
+
+            return operationsInGroups;
         }
 
         private void sortV(List<HashSet<int>> groupsAfterV, List<HashSet<string>> setElAfterV)//Сортую групи і множини елементів за кількістю елементів(разом щоб співпадали)
