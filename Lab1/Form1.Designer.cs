@@ -49,6 +49,7 @@
             this.calc_groups_btn = new System.Windows.Forms.Button();
             this.prec_groupList = new System.Windows.Forms.ListView();
             this.groupList = new System.Windows.Forms.ListView();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.numericRows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericCols)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultMatrix)).BeginInit();
@@ -236,6 +237,7 @@
             this.tabControl2.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage4);
+            this.tabControl2.Controls.Add(this.tabPage5);
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Multiline = true;
             this.tabControl2.Name = "tabControl2";
@@ -300,6 +302,16 @@
             this.groupList.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.groupLis_ColumnClick);
             this.groupList.SelectedIndexChanged += new System.EventHandler(this.groupList_SelectedIndexChanged);
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(850, 443);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,6 +367,7 @@
         private System.Windows.Forms.ListView prec_groupList;
         private System.Windows.Forms.ListView groupList;
         private System.Windows.Forms.Button calc_groups_btn;
+        private System.Windows.Forms.TabPage tabPage5;
     }
 }
 
