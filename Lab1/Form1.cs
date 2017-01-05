@@ -47,6 +47,8 @@ namespace Lab1
             }
 
             file.Close();
+
+            
         }
         private void clearEl()
         {
@@ -176,10 +178,10 @@ namespace Lab1
 
             if (calc.resultMatrix[0].Count != 1) //Достатьньо елементів для утворення груп?
             {
-                calc.createGroups();//Розбиваю на групи
+                //calc.createGroups();//Розбиваю на групи
 
-                Form2 Form2 = new Form2(calc);
-                Form2.Show();
+                //Form2 Form2 = new Form2(calc);
+                //Form2.Show();
 
                 //GraphVisual GraphVisual = new GraphVisual(calc);
                 //GraphVisual.Show();
@@ -286,7 +288,8 @@ namespace Lab1
 
         private void calc_groups_btn_Click(object sender, EventArgs e)
         {
-         
+            groupList.Clear();
+            prec_groupList.Clear();
 
             calc.createGroups();
             calc.outGroups(groupList);
@@ -297,6 +300,22 @@ namespace Lab1
             groupList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             prec_groupList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
+           // groupList.ListViewItemSorter = new ListViewItemComparer(0, false);
+
+        }
+
+        private void groupLis_ColumnClick(object sender, System.Windows.Forms.ColumnClickEventArgs e)
+        {
+            if(e.Column == 0)
+                groupList.ListViewItemSorter = new ListViewItemComparer(e.Column,false);
+            else
+                groupList.ListViewItemSorter = new ListViewItemComparer(e.Column, true);
+            groupList.Sort();
+        }
+
+        private void sortGroupListView_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

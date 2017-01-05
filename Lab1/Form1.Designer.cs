@@ -272,7 +272,7 @@
             // 
             // calc_groups_btn
             // 
-            this.calc_groups_btn.Location = new System.Drawing.Point(27, 22);
+            this.calc_groups_btn.Location = new System.Drawing.Point(6, 6);
             this.calc_groups_btn.Name = "calc_groups_btn";
             this.calc_groups_btn.Size = new System.Drawing.Size(171, 47);
             this.calc_groups_btn.TabIndex = 2;
@@ -282,7 +282,7 @@
             // 
             // prec_groupList
             // 
-            this.prec_groupList.Location = new System.Drawing.Point(428, 136);
+            this.prec_groupList.Location = new System.Drawing.Point(426, 59);
             this.prec_groupList.Name = "prec_groupList";
             this.prec_groupList.Size = new System.Drawing.Size(416, 223);
             this.prec_groupList.TabIndex = 1;
@@ -291,12 +291,13 @@
             // 
             // groupList
             // 
-            this.groupList.Location = new System.Drawing.Point(8, 136);
+            this.groupList.Location = new System.Drawing.Point(6, 59);
             this.groupList.Name = "groupList";
             this.groupList.Size = new System.Drawing.Size(414, 223);
             this.groupList.TabIndex = 0;
             this.groupList.UseCompatibleStateImageBehavior = false;
             this.groupList.View = System.Windows.Forms.View.Details;
+            this.groupList.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.groupLis_ColumnClick);
             this.groupList.SelectedIndexChanged += new System.EventHandler(this.groupList_SelectedIndexChanged);
             // 
             // Form1

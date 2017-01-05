@@ -111,6 +111,7 @@
     <Compile Include="GraphVisual.Designer.cs">
       <DependentUpon>GraphVisual.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListViewItemComparer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
