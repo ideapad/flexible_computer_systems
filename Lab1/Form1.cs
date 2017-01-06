@@ -94,6 +94,7 @@ namespace Lab1
 
         } //Очищає форму перед наступним обрахунком
 
+        private GraphVisual GraphVisual;
         NumericUpDown[] numUpDnArray; //Масив, який містить довжину рядків вхідної матриці
         TextBox[][] valueEl; //Масив, який містить значення вхідної матриці
         private void button1_Click(object sender, EventArgs e)//Розміщення NumericUpDown на формі(для кількості елементів в рядку) та TextBox
@@ -187,7 +188,7 @@ namespace Lab1
                 //GraphVisual.Show();
             }
 
-           
+
         }
 
         void ctr_ValueChanged(object sender, EventArgs e)//Подія при зміні довжини рядка
@@ -300,7 +301,11 @@ namespace Lab1
             groupList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             prec_groupList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
-           // groupList.ListViewItemSorter = new ListViewItemComparer(0, false);
+            // groupList.ListViewItemSorter = new ListViewItemComparer(0, false);
+
+
+            GraphVisual = new GraphVisual(calc,wpfHost);
+            GraphVisual.Show();
 
         }
 
@@ -313,9 +318,12 @@ namespace Lab1
             groupList.Sort();
         }
 
-        private void sortGroupListView_Click(object sender, EventArgs e)
+        private void prec_groupList_MouseDown(object sender, MouseEventArgs e)
         {
-            
+            ListViewHitTestInfo info = prec_groupList.HitTest(e.X, e.Y);
+            ListViewItem item = info.Item;
+
+            GraphVisual.showGivenGraph(item.Index);
         }
     }
 }

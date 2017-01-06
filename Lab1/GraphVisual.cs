@@ -20,12 +20,14 @@ namespace Lab1
     public partial class GraphVisual : Form
     {
         ///////////4 Лаба
-        public GraphVisual(Calculation calc)
+        public GraphVisual(Calculation calc, System.Windows.Forms.Integration.ElementHost host)
         {
             InitializeComponent();
             this.calc = calc;
+            this.mainHost = host;
         }
 
+        private System.Windows.Forms.Integration.ElementHost mainHost;
         private bool specifyModules = false;
 
         private ZoomControl _zoomctrl;
@@ -119,28 +121,32 @@ namespace Lab1
                    
                 }
 
-                if (!specifyModules)
-                {
-                    var datVertex1 = new DataVertex("Group " + (i + 1).ToString());
-                    var datVertex2 = new DataVertex(calc.mas[calc.groupsAfterV[i].ElementAt(0)].ElementAt(0));
+                //if (!specifyModules)
+                //{
+                //    var datVertex1 = new DataVertex("Group " + (i + 1).ToString());
+                //    var datVertex2 = new DataVertex(calc.mas[calc.groupsAfterV[i].ElementAt(0)].ElementAt(0));
 
-                    vlist.Add(datVertex1);
-                    Graph.AddVertex(datVertex1);
+                //    vlist.Add(datVertex1);
+                //    Graph.AddVertex(datVertex1);
 
-                    var Edg = new DataEdge(vlist.Find(x => x.Text == datVertex1.Text), vlist.Find(x => x.Text == datVertex2.Text))
-                    { Text = string.Format("{0} -> {1}", datVertex1.Text, vlist.Find(x => x.Text == datVertex2.Text)) };
-                    Graph.AddEdge(Edg);
-                }
+                //    var Edg = new DataEdge(vlist.Find(x => x.Text == datVertex1.Text), vlist.Find(x => x.Text == datVertex2.Text))
+                //    { Text = string.Format("{0} -> {1}", datVertex1.Text, vlist.Find(x => x.Text == datVertex2.Text)) };
+                //    Graph.AddEdge(Edg);
+                //}
                 
 
                 graphs.Add(Graph);
             }
+
             totalGraph = new Graph();//Граф для відображення(об'єднує всі графи)
-            for (int i = 0; i < graphs.Count; i++)
-            {
-                totalGraph.AddVertexRange(graphs.ElementAt(i).Vertices.ToList());
-                totalGraph.AddEdgeRange(graphs.ElementAt(i).Edges.ToList());
-            }
+
+            totalGraph.AddVertexRange(graphs.ElementAt(1).Vertices.ToList());
+            totalGraph.AddEdgeRange(graphs.ElementAt(1).Edges.ToList());
+            //for (int i = 0; i < graphs.Count; i++)
+            //{
+            //    totalGraph.AddVertexRange(graphs.ElementAt(i).Vertices.ToList());
+            //    totalGraph.AddEdgeRange(graphs.ElementAt(i).Edges.ToList());
+            //}
             return totalGraph;
         }
 
@@ -225,6 +231,7 @@ namespace Lab1
                 } while (flag);
             }
             //////////////////////////////
+            //allGraphs.Add(graphs[0]);
             allGraphs.Add(totalGraph);
             _gArea.GenerateGraph(true, true);//Перемальовую граф
             
@@ -308,6 +315,43 @@ namespace Lab1
                 return null;
             return listV;
         }
+
+        //private void outGraph()
+        //{
+        //    foreach()
+
+        //    bool[,] graph = CreateGraph(elements, group);
+        //    textBox1.Text += "Graph: \r\n";
+        //    for (int i = 0; i < elements.Count; i++)
+        //    {
+        //        for (int j = 0; j < elements.Count; j++)
+        //        {
+        //            textBox1.Text += ((graph[i, j] == true) ? "1" : "0") + " ";
+        //        }
+        //        textBox1.Text += "\r\n";
+        //    }
+        //}
+
+        //bool[,] CreateGraph(List<Module> elements, List<int> group)
+        //{
+        //    bool[,] graph = new bool[elements.Count, elements.Count];
+        //    string prev = operationMatrix[group[0]][0];
+        //    foreach (int i in group)
+        //    {
+        //        prev = operationMatrix[i][0];
+        //        foreach (string str in operationMatrix[i])
+        //        {
+        //            if (prev != str)
+        //            {
+        //                int y = elements.FindIndex(m => m.Name.Contains(prev));
+        //                int x = elements.FindIndex(m => m.Name.Contains(str));
+        //                graph[x, y] = true;
+        //                prev = str;
+        //            }
+        //        }
+        //    }
+        //    return graph;
+        //}
 
         private List<List<DataVertex>> fourthCondition(Graph graph)//Пошук циклів
         {
@@ -555,6 +599,7 @@ namespace Lab1
         {
             GenerateGraph();
             wpfHost.Child = GenerateWpfVisuals();
+            mainHost.Child = GenerateWpfVisuals();
             _gArea.GenerateGraph(true, true);
             _gArea.RelayoutGraph();
         }
@@ -564,6 +609,20 @@ namespace Lab1
             _gArea.RelayoutGraph();
         }
        
+        public void showGivenGraph(int graphIndex)
+        {
+            if (graphIndex > calc.groupsAfterV.Count())
+                return;
+
+            totalGraph.Clear();
+
+            totalGraph.AddVertexRange(graphs.ElementAt(graphIndex).Vertices.ToList());
+            totalGraph.AddEdgeRange(graphs.ElementAt(graphIndex).Edges.ToList());
+
+            _gArea.GenerateGraph(true, true);
+            _gArea.RelayoutGraph();
+        }
+
         private void createM_Click(object sender, EventArgs e)
         {
             calc.moduls.Clear();

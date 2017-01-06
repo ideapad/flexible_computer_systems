@@ -46,6 +46,7 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.wpfHost = new System.Windows.Forms.Integration.ElementHost();
             this.calc_groups_btn = new System.Windows.Forms.Button();
             this.prec_groupList = new System.Windows.Forms.ListView();
             this.groupList = new System.Windows.Forms.ListView();
@@ -242,7 +243,7 @@
             this.tabControl2.Multiline = true;
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(858, 472);
+            this.tabControl2.Size = new System.Drawing.Size(897, 472);
             this.tabControl2.TabIndex = 12;
             // 
             // tabPage3
@@ -254,23 +255,36 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(850, 443);
+            this.tabPage3.Size = new System.Drawing.Size(889, 443);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.wpfHost);
             this.tabPage4.Controls.Add(this.calc_groups_btn);
             this.tabPage4.Controls.Add(this.prec_groupList);
             this.tabPage4.Controls.Add(this.groupList);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(850, 443);
+            this.tabPage4.Size = new System.Drawing.Size(889, 443);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // wpfHost
+            // 
+            this.wpfHost.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.wpfHost.Location = new System.Drawing.Point(366, 59);
+            this.wpfHost.Name = "wpfHost";
+            this.wpfHost.Size = new System.Drawing.Size(438, 314);
+            this.wpfHost.TabIndex = 3;
+            this.wpfHost.Text = "elementHost1";
+            this.wpfHost.Child = null;
             // 
             // calc_groups_btn
             // 
@@ -284,18 +298,19 @@
             // 
             // prec_groupList
             // 
-            this.prec_groupList.Location = new System.Drawing.Point(426, 59);
+            this.prec_groupList.Location = new System.Drawing.Point(8, 219);
             this.prec_groupList.Name = "prec_groupList";
-            this.prec_groupList.Size = new System.Drawing.Size(416, 223);
+            this.prec_groupList.Size = new System.Drawing.Size(343, 154);
             this.prec_groupList.TabIndex = 1;
             this.prec_groupList.UseCompatibleStateImageBehavior = false;
             this.prec_groupList.View = System.Windows.Forms.View.Details;
+            this.prec_groupList.MouseDown += new System.Windows.Forms.MouseEventHandler(this.prec_groupList_MouseDown);
             // 
             // groupList
             // 
             this.groupList.Location = new System.Drawing.Point(6, 59);
             this.groupList.Name = "groupList";
-            this.groupList.Size = new System.Drawing.Size(414, 223);
+            this.groupList.Size = new System.Drawing.Size(345, 154);
             this.groupList.TabIndex = 0;
             this.groupList.UseCompatibleStateImageBehavior = false;
             this.groupList.View = System.Windows.Forms.View.Details;
@@ -307,7 +322,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(850, 443);
+            this.tabPage5.Size = new System.Drawing.Size(889, 443);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -317,7 +332,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(862, 472);
+            this.ClientSize = new System.Drawing.Size(898, 510);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.numericCols);
             this.Controls.Add(this.lNumberCols);
@@ -368,6 +383,7 @@
         private System.Windows.Forms.ListView groupList;
         private System.Windows.Forms.Button calc_groups_btn;
         private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Integration.ElementHost wpfHost;
     }
 }
 
