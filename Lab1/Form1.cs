@@ -319,7 +319,7 @@ namespace Lab1
         }
 
         private void prec_groupList_MouseDown(object sender, MouseEventArgs e)
-        {
+        {       
             ListViewHitTestInfo info = prec_groupList.HitTest(e.X, e.Y);
             ListViewItem item = info.Item;
 

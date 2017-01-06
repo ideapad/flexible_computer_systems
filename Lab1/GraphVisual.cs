@@ -28,7 +28,6 @@ namespace Lab1
         }
 
         private System.Windows.Forms.Integration.ElementHost mainHost;
-        private bool specifyModules = false;
 
         private ZoomControl _zoomctrl;
         private GraphArea _gArea;
@@ -120,33 +119,21 @@ namespace Lab1
 
                    
                 }
-
-                //if (!specifyModules)
-                //{
-                //    var datVertex1 = new DataVertex("Group " + (i + 1).ToString());
-                //    var datVertex2 = new DataVertex(calc.mas[calc.groupsAfterV[i].ElementAt(0)].ElementAt(0));
-
-                //    vlist.Add(datVertex1);
-                //    Graph.AddVertex(datVertex1);
-
-                //    var Edg = new DataEdge(vlist.Find(x => x.Text == datVertex1.Text), vlist.Find(x => x.Text == datVertex2.Text))
-                //    { Text = string.Format("{0} -> {1}", datVertex1.Text, vlist.Find(x => x.Text == datVertex2.Text)) };
-                //    Graph.AddEdge(Edg);
-                //}
-                
-
+                            
                 graphs.Add(Graph);
             }
 
             totalGraph = new Graph();//Граф для відображення(об'єднує всі графи)
 
-            totalGraph.AddVertexRange(graphs.ElementAt(1).Vertices.ToList());
-            totalGraph.AddEdgeRange(graphs.ElementAt(1).Edges.ToList());
+            totalGraph.AddVertexRange(graphs.First().Vertices.ToList());
+            totalGraph.AddEdgeRange(graphs.First().Edges.ToList());
+
             //for (int i = 0; i < graphs.Count; i++)
             //{
             //    totalGraph.AddVertexRange(graphs.ElementAt(i).Vertices.ToList());
             //    totalGraph.AddEdgeRange(graphs.ElementAt(i).Edges.ToList());
             //}
+
             return totalGraph;
         }
 
@@ -638,7 +625,7 @@ namespace Lab1
 
             createModuls();
 
-            if(!specifyModules)
+            
             outModuls();
 
             _gArea.RelayoutGraph();
@@ -823,14 +810,12 @@ namespace Lab1
 
         private void modulsV_Click(object sender, EventArgs e)
         {
-            specifyModules = true;
             calc.modulsAfterVerification.Clear();
             createM_Click(sender, e);
             createVerificationModuls();
             outVModuls();
             _gArea.GenerateGraph(true, true);//Перемальовую граф
             _gArea.RelayoutGraph();
-            specifyModules = false;
         }
         
         private void outVModuls()
