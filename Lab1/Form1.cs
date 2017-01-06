@@ -312,5 +312,10 @@ namespace Lab1
 
             GraphVisual.showGivenGraph(item.Index);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            GraphVisual.getModulesList(modules_view);
+        }
     }
 }

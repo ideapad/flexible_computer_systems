@@ -28,15 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Node3");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Node4");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Node5");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Node0", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node1");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Node2");
             this.lNumberRows = new System.Windows.Forms.Label();
             this.numericRows = new System.Windows.Forms.NumericUpDown();
             this.button2 = new System.Windows.Forms.Button();
@@ -60,7 +51,9 @@
             this.prec_groupList = new System.Windows.Forms.ListView();
             this.groupList = new System.Windows.Forms.ListView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.modules_view = new System.Windows.Forms.TreeView();
+            this.prec_modules_view = new System.Windows.Forms.TreeView();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericRows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericCols)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultMatrix)).BeginInit();
@@ -330,7 +323,9 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.treeView1);
+            this.tabPage5.Controls.Add(this.button4);
+            this.tabPage5.Controls.Add(this.prec_modules_view);
+            this.tabPage5.Controls.Add(this.modules_view);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -339,28 +334,29 @@
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // treeView1
+            // modules_view
             // 
-            this.treeView1.Location = new System.Drawing.Point(178, 144);
-            this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Node3";
-            treeNode1.Text = "Node3";
-            treeNode2.Name = "Node4";
-            treeNode2.Text = "Node4";
-            treeNode3.Name = "Node5";
-            treeNode3.Text = "Node5";
-            treeNode4.Name = "Node0";
-            treeNode4.Text = "Node0";
-            treeNode5.Name = "Node1";
-            treeNode5.Text = "Node1";
-            treeNode6.Name = "Node2";
-            treeNode6.Text = "Node2";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5,
-            treeNode6});
-            this.treeView1.Size = new System.Drawing.Size(121, 97);
-            this.treeView1.TabIndex = 0;
+            this.modules_view.Location = new System.Drawing.Point(8, 70);
+            this.modules_view.Name = "modules_view";
+            this.modules_view.Size = new System.Drawing.Size(360, 367);
+            this.modules_view.TabIndex = 0;
+            // 
+            // prec_modules_view
+            // 
+            this.prec_modules_view.Location = new System.Drawing.Point(403, 70);
+            this.prec_modules_view.Name = "prec_modules_view";
+            this.prec_modules_view.Size = new System.Drawing.Size(360, 367);
+            this.prec_modules_view.TabIndex = 1;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(9, 23);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(140, 41);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Сформувати модулі";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
@@ -420,7 +416,9 @@
         private System.Windows.Forms.Button calc_groups_btn;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Integration.ElementHost wpfHost;
-        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TreeView modules_view;
+        private System.Windows.Forms.TreeView prec_modules_view;
+        private System.Windows.Forms.Button button4;
     }
 }
 

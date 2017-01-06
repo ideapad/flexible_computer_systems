@@ -631,6 +631,37 @@ namespace Lab1
             _gArea.RelayoutGraph();
         }
        
+        public void getModulesList(TreeView view)
+        {
+            if (calc.moduls.Count() == 0)
+                createModuls();
+            //textBox1.Text = "Modules:\n";
+            //int n = 1;
+            //textBox1.Text += "\r\n";
+            for (int i = 0; i < calc.moduls.Count; i++)
+            {
+                foreach (List<string> list in calc.moduls[i])
+                {
+                    string module = string.Empty;
+                    //if (list.First().StartsWith("Group"))
+                    //{
+                    //    textBox1.Text += list.First() + " ends" + "\r\n" + "\r\n";
+                    //}
+                    //else
+                    //{
+                    //    textBox1.Text += n + " module {  ";
+                    foreach (string j in list)
+                    {
+                        module += j + "  ";
+                    }
+                    //    textBox1.Text += "}\r\n";
+                    //    n++;
+                    //}
+                    view.Nodes.Add(module);
+                }
+            }
+        }
+
         private void backG_Click(object sender, EventArgs e)
         {
             if (currentGraph != 0 && calc.moduls.Count != 0)
