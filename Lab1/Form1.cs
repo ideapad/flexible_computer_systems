@@ -176,19 +176,6 @@ namespace Lab1
             calc.calcResultMatrix(valueEl, (int)numericRows.Value, numUpDnArray);// Обчислюю матрицю подібності
             calc.outBooltMatrix(boolMatrix);//Виведення результатів
             calc.outResultMatrix(resultMatrix);
-
-            if (calc.resultMatrix[0].Count != 1) //Достатьньо елементів для утворення груп?
-            {
-                //calc.createGroups();//Розбиваю на групи
-
-                //Form2 Form2 = new Form2(calc);
-                //Form2.Show();
-
-                //GraphVisual GraphVisual = new GraphVisual(calc);
-                //GraphVisual.Show();
-            }
-
-
         }
 
         void ctr_ValueChanged(object sender, EventArgs e)//Подія при зміні довжини рядка
@@ -289,6 +276,9 @@ namespace Lab1
 
         private void calc_groups_btn_Click(object sender, EventArgs e)
         {
+            if (calc.resultMatrix[0].Count == 1) //Достатьньо елементів для утворення груп?
+                return;
+
             groupList.Clear();
             prec_groupList.Clear();
 
@@ -301,12 +291,9 @@ namespace Lab1
             groupList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             prec_groupList.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
-            // groupList.ListViewItemSorter = new ListViewItemComparer(0, false);
-
-
             GraphVisual = new GraphVisual(calc,wpfHost);
-            GraphVisual.Show();
-
+            GraphVisual.GraphVisual_Load(sender,e);
+           // GraphVisual.Show();
         }
 
         private void groupLis_ColumnClick(object sender, System.Windows.Forms.ColumnClickEventArgs e)

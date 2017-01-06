@@ -41,7 +41,7 @@ namespace Lab1
         private List<Graph> allGraphs = new List<Graph>();//Лист для зберігання проміжних графів(щоб можна було переглядати покроково)
         private int currentGraph;//Номер проміжного графа в allGraphs, який відображається
         
-        private void GraphVisual_Load(object sender, EventArgs e)
+        public void GraphVisual_Load(object sender, EventArgs e)
         {
             Generate_Click(sender, e);
             

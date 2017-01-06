@@ -28,6 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Node3");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Node4");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Node5");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Node0", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node1");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Node2");
             this.lNumberRows = new System.Windows.Forms.Label();
             this.numericRows = new System.Windows.Forms.NumericUpDown();
             this.button2 = new System.Windows.Forms.Button();
@@ -51,6 +60,7 @@
             this.prec_groupList = new System.Windows.Forms.ListView();
             this.groupList = new System.Windows.Forms.ListView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.numericRows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericCols)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultMatrix)).BeginInit();
@@ -61,6 +71,7 @@
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // lNumberRows
@@ -319,6 +330,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.treeView1);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -326,6 +338,29 @@
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(178, 144);
+            this.treeView1.Name = "treeView1";
+            treeNode1.Name = "Node3";
+            treeNode1.Text = "Node3";
+            treeNode2.Name = "Node4";
+            treeNode2.Text = "Node4";
+            treeNode3.Name = "Node5";
+            treeNode3.Text = "Node5";
+            treeNode4.Name = "Node0";
+            treeNode4.Text = "Node0";
+            treeNode5.Name = "Node1";
+            treeNode5.Text = "Node1";
+            treeNode6.Name = "Node2";
+            treeNode6.Text = "Node2";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode4,
+            treeNode5,
+            treeNode6});
+            this.treeView1.Size = new System.Drawing.Size(121, 97);
+            this.treeView1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -354,6 +389,7 @@
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,6 +420,7 @@
         private System.Windows.Forms.Button calc_groups_btn;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Integration.ElementHost wpfHost;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
 
