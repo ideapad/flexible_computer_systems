@@ -80,7 +80,7 @@ namespace Lab1
             return _zoomctrl;
         }
 
-        private Graph GenerateGraph()//Створює графи на основі уточнених груп
+        public Graph GenerateGraph()//Створює графи на основі уточнених груп
         {
             graphs = new List<Graph>();//Лист графів для кожної групи
             for (int i = 0; i < calc.setElAfterV.Count; i++)
@@ -96,6 +96,20 @@ namespace Lab1
                 }
 
                 var vlist = Graph.Vertices.ToList();
+
+
+                //if (indicateByGroup)
+                //{
+                //    var datVertex1 = new DataVertex("Group " + (i + 1).ToString());
+                //    var datVertex2 = new DataVertex(calc.mas[calc.groupsAfterV[i].ElementAt(0)].ElementAt(0));
+
+                //    vlist.Add(datVertex1);
+                //    Graph.AddVertex(datVertex1);
+
+                //    var Edg = new DataEdge(vlist.Find(x => x.Text == datVertex1.Text), vlist.Find(x => x.Text == datVertex2.Text))
+                //    { Text = string.Format("{0} -> {1}", datVertex1.Text, vlist.Find(x => x.Text == datVertex2.Text)) };
+                //    Graph.AddEdge(Edg);
+                //}
 
 
                 for (int j = 0; j < calc.groupsAfterV[i].Count; j++)//Формування ребер
@@ -116,23 +130,22 @@ namespace Lab1
                         }
                 
                     }
+                
+                }              
 
-                   
-                }
-                            
                 graphs.Add(Graph);
             }
 
             totalGraph = new Graph();//Граф для відображення(об'єднує всі графи)
 
-            totalGraph.AddVertexRange(graphs.First().Vertices.ToList());
-            totalGraph.AddEdgeRange(graphs.First().Edges.ToList());
+            //totalGraph.AddVertexRange(graphs.First().Vertices.ToList());
+            //totalGraph.AddEdgeRange(graphs.First().Edges.ToList());
 
-            //for (int i = 0; i < graphs.Count; i++)
-            //{
-            //    totalGraph.AddVertexRange(graphs.ElementAt(i).Vertices.ToList());
-            //    totalGraph.AddEdgeRange(graphs.ElementAt(i).Edges.ToList());
-            //}
+            for (int i = 0; i < graphs.Count; i++)
+            {
+                totalGraph.AddVertexRange(graphs.ElementAt(i).Vertices.ToList());
+                totalGraph.AddEdgeRange(graphs.ElementAt(i).Edges.ToList());
+            }
 
             return totalGraph;
         }
@@ -582,7 +595,7 @@ namespace Lab1
             return true;
         }
 
-        private void Generate_Click(object sender, EventArgs e)
+        public void Generate_Click(object sender, EventArgs e)
         {
             GenerateGraph();
             wpfHost.Child = GenerateWpfVisuals();
@@ -590,7 +603,7 @@ namespace Lab1
             _gArea.GenerateGraph(true, true);
             _gArea.RelayoutGraph();
         }
-
+       
         private void Reload_Click(object sender, EventArgs e)
         {
             _gArea.RelayoutGraph();
@@ -598,7 +611,7 @@ namespace Lab1
        
         public void showGivenGraph(int graphIndex)
         {
-            if (graphIndex > calc.groupsAfterV.Count())
+            if (graphIndex > calc.groupsAfterV.Count()) 
                 return;
 
             totalGraph.Clear();
@@ -635,31 +648,48 @@ namespace Lab1
         {
             if (calc.moduls.Count() == 0)
                 createModuls();
-            //textBox1.Text = "Modules:\n";
-            //int n = 1;
-            //textBox1.Text += "\r\n";
+
+            int moduleIndex = 1;
             for (int i = 0; i < calc.moduls.Count; i++)
             {
+                view.Nodes.Add("Group " + (i + 1) );
+
                 foreach (List<string> list in calc.moduls[i])
                 {
-                    string module = string.Empty;
-                    //if (list.First().StartsWith("Group"))
-                    //{
-                    //    textBox1.Text += list.First() + " ends" + "\r\n" + "\r\n";
-                    //}
-                    //else
-                    //{
-                    //    textBox1.Text += n + " module {  ";
-                    foreach (string j in list)
-                    {
-                        module += j + "  ";
-                    }
-                    //    textBox1.Text += "}\r\n";
-                    //    n++;
-                    //}
-                    view.Nodes.Add(module);
+                    string module = "Module " + moduleIndex + ": ";
+                    module += String.Join(" ",list);                   
+                    view.Nodes[i].Nodes.Add(module);
+
+                    moduleIndex++;
                 }
             }
+        }
+
+        public void getVModulesList(ListView list_box)
+        {
+            if (calc.modulsAfterVerification.Count() == 0)
+                createVerificationModuls();
+
+            string[] columns = { "Module number", "Module elements" };
+            foreach (string column_name in columns)
+                list_box.Columns.Add(column_name, 100);
+
+
+            int index = 1;
+            foreach (List<string> list in calc.modulsAfterVerification)
+            {
+                string module = String.Empty;
+
+                foreach (string j in list)
+                {
+                    module += j + " ";
+                }
+                string[] row = { "Module " + index, module};
+                var listViewItem = new ListViewItem(row);
+                list_box.Items.Add(listViewItem);
+                index++;
+            }
+
         }
 
         private void backG_Click(object sender, EventArgs e)

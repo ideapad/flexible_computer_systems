@@ -52,8 +52,8 @@
             this.groupList = new System.Windows.Forms.ListView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.modules_view = new System.Windows.Forms.TreeView();
-            this.prec_modules_view = new System.Windows.Forms.TreeView();
             this.button4 = new System.Windows.Forms.Button();
+            this.vmodules_list = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.numericRows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericCols)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultMatrix)).BeginInit();
@@ -247,7 +247,7 @@
             this.tabControl2.Multiline = true;
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(897, 472);
+            this.tabControl2.Size = new System.Drawing.Size(897, 510);
             this.tabControl2.TabIndex = 12;
             // 
             // tabPage3
@@ -323,13 +323,13 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.vmodules_list);
             this.tabPage5.Controls.Add(this.button4);
-            this.tabPage5.Controls.Add(this.prec_modules_view);
             this.tabPage5.Controls.Add(this.modules_view);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(889, 443);
+            this.tabPage5.Size = new System.Drawing.Size(889, 481);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -338,15 +338,8 @@
             // 
             this.modules_view.Location = new System.Drawing.Point(8, 70);
             this.modules_view.Name = "modules_view";
-            this.modules_view.Size = new System.Drawing.Size(360, 367);
+            this.modules_view.Size = new System.Drawing.Size(360, 403);
             this.modules_view.TabIndex = 0;
-            // 
-            // prec_modules_view
-            // 
-            this.prec_modules_view.Location = new System.Drawing.Point(403, 70);
-            this.prec_modules_view.Name = "prec_modules_view";
-            this.prec_modules_view.Size = new System.Drawing.Size(360, 367);
-            this.prec_modules_view.TabIndex = 1;
             // 
             // button4
             // 
@@ -357,6 +350,15 @@
             this.button4.Text = "Сформувати модулі";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // vmodules_list
+            // 
+            this.vmodules_list.Location = new System.Drawing.Point(429, 70);
+            this.vmodules_list.Name = "vmodules_list";
+            this.vmodules_list.Size = new System.Drawing.Size(314, 182);
+            this.vmodules_list.TabIndex = 4;
+            this.vmodules_list.UseCompatibleStateImageBehavior = false;
+            this.vmodules_list.View = System.Windows.Forms.View.Details;
             // 
             // Form1
             // 
@@ -417,8 +419,8 @@
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Integration.ElementHost wpfHost;
         private System.Windows.Forms.TreeView modules_view;
-        private System.Windows.Forms.TreeView prec_modules_view;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ListView vmodules_list;
     }
 }
 

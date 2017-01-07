@@ -293,7 +293,9 @@ namespace Lab1
 
             GraphVisual = new GraphVisual(calc,wpfHost);
             GraphVisual.GraphVisual_Load(sender,e);
-           // GraphVisual.Show();
+
+            GraphVisual.showGivenGraph(0);
+            // GraphVisual.Show();
         }
 
         private void groupLis_ColumnClick(object sender, System.Windows.Forms.ColumnClickEventArgs e)
@@ -315,7 +317,17 @@ namespace Lab1
 
         private void button4_Click(object sender, EventArgs e)
         {
+            modules_view.Nodes.Clear();
+            vmodules_list.Items.Clear();
+            vmodules_list.Columns.Clear();
+             
+            GraphVisual.Generate_Click(sender,e);
+
             GraphVisual.getModulesList(modules_view);
+            GraphVisual.getVModulesList(vmodules_list);
+
+            modules_view.ExpandAll();
+            vmodules_list.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
     }
 }
