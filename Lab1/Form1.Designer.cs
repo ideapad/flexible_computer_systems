@@ -192,7 +192,7 @@
             this.resultMatrix.AllowUserToAddRows = false;
             this.resultMatrix.AllowUserToDeleteRows = false;
             this.resultMatrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.resultMatrix.Location = new System.Drawing.Point(6, 119);
+            this.resultMatrix.Location = new System.Drawing.Point(6, 47);
             this.resultMatrix.Name = "resultMatrix";
             this.resultMatrix.ReadOnly = true;
             this.resultMatrix.Size = new System.Drawing.Size(437, 322);

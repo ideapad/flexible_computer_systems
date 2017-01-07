@@ -162,6 +162,21 @@ namespace Lab1
 
             calc.outBooltMatrix(boolMatrix);//Виведення результатів
             calc.outResultMatrix(resultMatrix);
+
+            fitDataGridView(boolMatrix,23);
+            fitDataGridView(resultMatrix,3);
+            // 23 & 3 are hand-picked numbers to DataGridViews to fit it's height to cells          
+        }
+
+        private void fitDataGridView(DataGridView dgv, int margin)
+        {
+            var height = margin;
+            foreach (DataGridViewRow dr in dgv.Rows)
+            {
+                height += dr.Height;
+            }
+
+            dgv.Height = height;
         }
 
         void ctr_ValueChanged(object sender, EventArgs e)//Подія при зміні довжини рядка
