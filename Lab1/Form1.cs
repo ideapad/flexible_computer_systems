@@ -147,33 +147,39 @@ namespace Lab1
             resultMatrix.Refresh();
 
             boolMatrix.Rows.Clear();
-            boolMatrix.Refresh();
+            boolMatrix.Refresh();    
 
-            if (richTextBox1.Text == String.Empty)
-            {
-                string[] row = richTextBox1.Text.Split('\n');
-                int index = 0;
+            //if (richTextBox1.Text != String.Empty)
+            //{
+            //    string[] row = richTextBox1.Text.Split('\n');
+            //    row = row.Where(x => !string.IsNullOrEmpty(x)).ToArray();
 
-                foreach (string el in row)
-                {
-                    string[] list = el.Split(' ');
+            //    int index = 0;
 
-                    for (int i = 0; i < list.Length; i++)
-                    {
-                        valueEl[index][i].Text = list[i];
-                    }
-                    index++;
-                }
-            }
+            //    foreach (string el in row)
+            //    {
+            //        string[] list = el.Split(' ');
+
+            //        for (int i = 0; i < list.Length; i++)
+            //        {
+            //            valueEl[index][i].Text = list[i];
+            //        }
+            //        index++;
+            //    }
+            //}
 
             calc = new Calculation();
-            
-            calc.countUniqueEl(valueEl); //Обчислюю кількість унікальних елементів
+
+            calc.countUniqueEl(richTextBox1.Text);
+          //  calc.countUniqueEl(valueEl); //Обчислюю кількість унікальних елементів
             lResult.Text = "Result: ";
             lResult.Text += "\nThe count of distinct elements: " + calc.CountUEl;
             lResult.Text += "\nMatrix: \n";
 
-            calc.calcResultMatrix(valueEl, (int)numericRows.Value, numUpDnArray);// Обчислюю матрицю подібності
+          //  calc.calcResultMatrix(valueEl, (int)numericRows.Value, numUpDnArray);// Обчислюю матрицю подібності
+
+            calc.calcResultMatrix(richTextBox1.Text);
+
             calc.outBooltMatrix(boolMatrix);//Виведення результатів
             calc.outResultMatrix(resultMatrix);
         }

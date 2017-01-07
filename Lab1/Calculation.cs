@@ -54,6 +54,34 @@ namespace Lab1
             if (voidEl) countUEl--;
         }
 
+        public void countUniqueEl(string matrix)//Обчислення унікальних елементів (копіюю всі елементи в множину, результатом буде кількість елементів)
+        {
+            bool voidEl = false;
+
+            foreach(string row in matrix.Split('\n'))
+            {
+                foreach (string element in row.Split(' '))
+                {
+                    setEl.Add(element);
+                    if (element == "")
+                        voidEl = true;
+                }
+            }
+
+            //foreach (TextBox[] i in valueEl)
+            //{
+            //    foreach (TextBox j in i)
+            //    {
+            //        setEl.Add(j.Text);
+            //        if (j.Text == "")
+            //            voidEl = true;
+            //    }
+            //}
+
+            countUEl = setEl.Count();
+            if (voidEl) countUEl--;
+        }
+
         public void calcResultMatrix(TextBox[][] valueEl, int sizeMatrix, NumericUpDown[] numUpDnArray)//Обчислення матриці подібності
         {
             mas = new List<HashSet<string>>();//Копіюю елементи з TextBox[][] в  List
@@ -115,6 +143,85 @@ namespace Lab1
                 }
             }
         }
+
+
+        public void calcResultMatrix(string matrix)//Обчислення матриці подібності
+        {
+            mas = new List<HashSet<string>>();//Копіюю елементи з TextBox[][] в  List
+
+            //for (int i = 0; i < sizeMatrix; i++)
+            //{
+            //    mas.Add(new HashSet<string>());
+
+            //    for (int j = 0; j < (int)numUpDnArray[i].Value; j++)
+            //    {
+            //        if (valueEl[i][j].Text == "") continue;
+
+
+            //        mas[i].Add(valueEl[i][j].Text);
+            //    }
+            //}
+
+            foreach(string row in matrix.Split('\n'))
+            {
+                HashSet<string> masRow = new HashSet<string>();
+
+                foreach(string element in row.Split(' '))
+                {
+                    if (element == "") continue;
+
+                    masRow.Add(element);
+                }
+
+                mas.Add(masRow);
+            }
+
+
+            for (int i = 0; i < mas.Count; i++)//Видалення пустих рядків
+            {
+                if (mas.ElementAt(i).Count == 0)
+                    mas.RemoveAt(i);
+            }
+            ////////////////////////////////////////////////////////////////////////////////////////
+            resultMatrix = new List<List<int>>();
+            for (int i = 0; i < mas.Count; i++)
+            {
+                resultMatrix.Add(new List<int>());
+                for (int j = 0; j < mas.Count; j++)
+                {
+                    resultMatrix[i].Add(0);
+                }
+            }
+            List<String> list; //List для злиття 2 рядків елементів
+            for (int i = 0; i < mas.Count - 1; i++)
+            {
+                list = new List<String>();
+
+                for (int j = 1; j < mas.Count; j++)
+                {
+                    if (i == j) continue;
+
+
+                    list.AddRange(mas[i]);//Копіюю 1 рядок
+                    list.AddRange(mas[j]);//Копіюю 2 рядок
+
+                    /* list.Distinct() видаляє елементи, які повторюються, залишаючи перший з них.
+                     * (list.Count - list.Distinct().Count()))*2 - дізнаюсь скільки спільних елементів
+                     * (list.Count - (list.Count - list.Distinct().Count()) * 2) - дізнаюсь скільки унікальних елементів
+                     * countUEl - (list.Count - (list.Count - list.Distinct().Count()) * 2) - від загальної кількості віднімаю унікальні в 2 рядках
+                     */
+
+
+                    resultMatrix[i][j] = countUEl - (list.Count - (list.Count - list.Distinct().Count()) * 2);
+
+                    resultMatrix[j][i] = countUEl - (list.Count - (list.Count - list.Distinct().Count()) * 2);
+
+
+                    list.Clear();//Очищаю для наступної пари рядків
+                }
+            }
+        }
+
 
         public void outBooltMatrix(DataGridView data)//Виведення матриці наявності елементів у рядках
         {
