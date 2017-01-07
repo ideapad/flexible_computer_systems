@@ -149,25 +149,6 @@ namespace Lab1
             boolMatrix.Rows.Clear();
             boolMatrix.Refresh();    
 
-            //if (richTextBox1.Text != String.Empty)
-            //{
-            //    string[] row = richTextBox1.Text.Split('\n');
-            //    row = row.Where(x => !string.IsNullOrEmpty(x)).ToArray();
-
-            //    int index = 0;
-
-            //    foreach (string el in row)
-            //    {
-            //        string[] list = el.Split(' ');
-
-            //        for (int i = 0; i < list.Length; i++)
-            //        {
-            //            valueEl[index][i].Text = list[i];
-            //        }
-            //        index++;
-            //    }
-            //}
-
             calc = new Calculation();
 
             calc.countUniqueEl(richTextBox1.Text);
@@ -177,7 +158,6 @@ namespace Lab1
             lResult.Text += "\nMatrix: \n";
 
           //  calc.calcResultMatrix(valueEl, (int)numericRows.Value, numUpDnArray);// Обчислюю матрицю подібності
-
             calc.calcResultMatrix(richTextBox1.Text);
 
             calc.outBooltMatrix(boolMatrix);//Виведення результатів

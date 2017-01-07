@@ -51,9 +51,10 @@
             this.prec_groupList = new System.Windows.Forms.ListView();
             this.groupList = new System.Windows.Forms.ListView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.modules_view = new System.Windows.Forms.TreeView();
-            this.button4 = new System.Windows.Forms.Button();
             this.vmodules_list = new System.Windows.Forms.ListView();
+            this.button4 = new System.Windows.Forms.Button();
+            this.modules_view = new System.Windows.Forms.TreeView();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.numericRows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericCols)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultMatrix)).BeginInit();
@@ -157,7 +158,7 @@
             this.button3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.button3.Location = new System.Drawing.Point(3, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 23);
+            this.button3.Size = new System.Drawing.Size(381, 23);
             this.button3.TabIndex = 7;
             this.button3.Text = "File";
             this.button3.UseVisualStyleBackColor = false;
@@ -169,17 +170,18 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Font = new System.Drawing.Font("Letter Gothic Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(1, 31);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(375, 329);
+            this.richTextBox1.Size = new System.Drawing.Size(383, 387);
             this.richTextBox1.TabIndex = 8;
             this.richTextBox1.Text = "";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 366);
+            this.button1.Location = new System.Drawing.Point(3, 424);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 49);
+            this.button1.Size = new System.Drawing.Size(381, 49);
             this.button1.TabIndex = 9;
             this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = true;
@@ -190,7 +192,7 @@
             this.resultMatrix.AllowUserToAddRows = false;
             this.resultMatrix.AllowUserToDeleteRows = false;
             this.resultMatrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.resultMatrix.Location = new System.Drawing.Point(3, 6);
+            this.resultMatrix.Location = new System.Drawing.Point(6, 119);
             this.resultMatrix.Name = "resultMatrix";
             this.resultMatrix.ReadOnly = true;
             this.resultMatrix.Size = new System.Drawing.Size(437, 322);
@@ -203,7 +205,7 @@
             this.tabControl1.Location = new System.Drawing.Point(390, 10);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(454, 436);
+            this.tabControl1.Size = new System.Drawing.Size(454, 471);
             this.tabControl1.TabIndex = 11;
             // 
             // tabPage1
@@ -213,7 +215,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(446, 410);
+            this.tabPage1.Size = new System.Drawing.Size(446, 445);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -221,9 +223,9 @@
             // boolMatrix
             // 
             this.boolMatrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.boolMatrix.Location = new System.Drawing.Point(6, 59);
+            this.boolMatrix.Location = new System.Drawing.Point(3, 93);
             this.boolMatrix.Name = "boolMatrix";
-            this.boolMatrix.Size = new System.Drawing.Size(437, 348);
+            this.boolMatrix.Size = new System.Drawing.Size(440, 348);
             this.boolMatrix.TabIndex = 5;
             // 
             // tabPage2
@@ -232,7 +234,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(446, 410);
+            this.tabPage2.Size = new System.Drawing.Size(446, 445);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -243,6 +245,7 @@
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage4);
             this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Multiline = true;
             this.tabControl2.Name = "tabControl2";
@@ -259,9 +262,9 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(889, 443);
+            this.tabPage3.Size = new System.Drawing.Size(889, 481);
             this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Дані";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
@@ -273,9 +276,9 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(889, 443);
+            this.tabPage4.Size = new System.Drawing.Size(889, 481);
             this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.Text = "Групи";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // wpfHost
@@ -283,9 +286,9 @@
             this.wpfHost.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.wpfHost.Location = new System.Drawing.Point(366, 59);
+            this.wpfHost.Location = new System.Drawing.Point(432, 6);
             this.wpfHost.Name = "wpfHost";
-            this.wpfHost.Size = new System.Drawing.Size(438, 314);
+            this.wpfHost.Size = new System.Drawing.Size(450, 467);
             this.wpfHost.TabIndex = 3;
             this.wpfHost.Text = "elementHost1";
             this.wpfHost.Child = null;
@@ -294,7 +297,7 @@
             // 
             this.calc_groups_btn.Location = new System.Drawing.Point(6, 6);
             this.calc_groups_btn.Name = "calc_groups_btn";
-            this.calc_groups_btn.Size = new System.Drawing.Size(171, 47);
+            this.calc_groups_btn.Size = new System.Drawing.Size(420, 47);
             this.calc_groups_btn.TabIndex = 2;
             this.calc_groups_btn.Text = "Сформувати групи";
             this.calc_groups_btn.UseVisualStyleBackColor = true;
@@ -302,9 +305,9 @@
             // 
             // prec_groupList
             // 
-            this.prec_groupList.Location = new System.Drawing.Point(8, 219);
+            this.prec_groupList.Location = new System.Drawing.Point(6, 270);
             this.prec_groupList.Name = "prec_groupList";
-            this.prec_groupList.Size = new System.Drawing.Size(343, 154);
+            this.prec_groupList.Size = new System.Drawing.Size(420, 203);
             this.prec_groupList.TabIndex = 1;
             this.prec_groupList.UseCompatibleStateImageBehavior = false;
             this.prec_groupList.View = System.Windows.Forms.View.Details;
@@ -314,7 +317,7 @@
             // 
             this.groupList.Location = new System.Drawing.Point(6, 59);
             this.groupList.Name = "groupList";
-            this.groupList.Size = new System.Drawing.Size(345, 154);
+            this.groupList.Size = new System.Drawing.Size(420, 205);
             this.groupList.TabIndex = 0;
             this.groupList.UseCompatibleStateImageBehavior = false;
             this.groupList.View = System.Windows.Forms.View.Details;
@@ -331,19 +334,21 @@
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(889, 481);
             this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.Text = "Модулі";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // modules_view
+            // vmodules_list
             // 
-            this.modules_view.Location = new System.Drawing.Point(8, 70);
-            this.modules_view.Name = "modules_view";
-            this.modules_view.Size = new System.Drawing.Size(360, 403);
-            this.modules_view.TabIndex = 0;
+            this.vmodules_list.Location = new System.Drawing.Point(374, 53);
+            this.vmodules_list.Name = "vmodules_list";
+            this.vmodules_list.Size = new System.Drawing.Size(360, 213);
+            this.vmodules_list.TabIndex = 4;
+            this.vmodules_list.UseCompatibleStateImageBehavior = false;
+            this.vmodules_list.View = System.Windows.Forms.View.Details;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(9, 23);
+            this.button4.Location = new System.Drawing.Point(8, 6);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(140, 41);
             this.button4.TabIndex = 2;
@@ -351,14 +356,22 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // vmodules_list
+            // modules_view
             // 
-            this.vmodules_list.Location = new System.Drawing.Point(429, 70);
-            this.vmodules_list.Name = "vmodules_list";
-            this.vmodules_list.Size = new System.Drawing.Size(314, 182);
-            this.vmodules_list.TabIndex = 4;
-            this.vmodules_list.UseCompatibleStateImageBehavior = false;
-            this.vmodules_list.View = System.Windows.Forms.View.Details;
+            this.modules_view.Location = new System.Drawing.Point(8, 53);
+            this.modules_view.Name = "modules_view";
+            this.modules_view.Size = new System.Drawing.Size(360, 403);
+            this.modules_view.TabIndex = 0;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 25);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(889, 481);
+            this.tabPage6.TabIndex = 3;
+            this.tabPage6.Text = "Структура";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -421,6 +434,7 @@
         private System.Windows.Forms.TreeView modules_view;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListView vmodules_list;
+        private System.Windows.Forms.TabPage tabPage6;
     }
 }
 

@@ -149,19 +149,6 @@ namespace Lab1
         {
             mas = new List<HashSet<string>>();//Копіюю елементи з TextBox[][] в  List
 
-            //for (int i = 0; i < sizeMatrix; i++)
-            //{
-            //    mas.Add(new HashSet<string>());
-
-            //    for (int j = 0; j < (int)numUpDnArray[i].Value; j++)
-            //    {
-            //        if (valueEl[i][j].Text == "") continue;
-
-
-            //        mas[i].Add(valueEl[i][j].Text);
-            //    }
-            //}
-
             foreach(string row in matrix.Split('\n'))
             {
                 HashSet<string> masRow = new HashSet<string>();
@@ -201,16 +188,8 @@ namespace Lab1
                 {
                     if (i == j) continue;
 
-
                     list.AddRange(mas[i]);//Копіюю 1 рядок
                     list.AddRange(mas[j]);//Копіюю 2 рядок
-
-                    /* list.Distinct() видаляє елементи, які повторюються, залишаючи перший з них.
-                     * (list.Count - list.Distinct().Count()))*2 - дізнаюсь скільки спільних елементів
-                     * (list.Count - (list.Count - list.Distinct().Count()) * 2) - дізнаюсь скільки унікальних елементів
-                     * countUEl - (list.Count - (list.Count - list.Distinct().Count()) * 2) - від загальної кількості віднімаю унікальні в 2 рядках
-                     */
-
 
                     resultMatrix[i][j] = countUEl - (list.Count - (list.Count - list.Distinct().Count()) * 2);
 
