@@ -33,12 +33,6 @@ namespace Lab1
             {
                 string[] list = line.Split(' ');
 
-                //for (int i = 0; i < line.Length - 1; i++)
-                //{
-                //    list.Add(line.Substring(i, 2));
-                //    i++;
-                //}
-
                 for (int i = 0; i < list.Length; i++)
                 {
                     valueEl[index][i].Text = list[i];
@@ -153,9 +147,9 @@ namespace Lab1
 
             calc.countUniqueEl(richTextBox1.Text);
           //  calc.countUniqueEl(valueEl); //Обчислюю кількість унікальних елементів
-            lResult.Text = "Result: ";
-            lResult.Text += "\nThe count of distinct elements: " + calc.CountUEl;
-            lResult.Text += "\nMatrix: \n";
+            lResult.Text = "Результат: ";
+            lResult.Text += "\nКількість унікальних елементів: " + calc.CountUEl;
+            lResult.Text += "\nМатриця: \n";
 
           //  calc.calcResultMatrix(valueEl, (int)numericRows.Value, numUpDnArray);// Обчислюю матрицю подібності
             calc.calcResultMatrix(richTextBox1.Text);
@@ -296,7 +290,7 @@ namespace Lab1
             GraphVisual.GraphVisual_Load(sender,e);
 
             GraphVisual.showGivenGraph(0);
-            // GraphVisual.Show();
+
         }
 
         private void groupLis_ColumnClick(object sender, System.Windows.Forms.ColumnClickEventArgs e)
@@ -329,6 +323,13 @@ namespace Lab1
 
             modules_view.ExpandAll();
             vmodules_list.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text != string.Empty)
+                button1.Enabled = true;
+            else button1.Enabled = false;
         }
     }
 }

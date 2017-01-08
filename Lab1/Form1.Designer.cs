@@ -55,6 +55,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.modules_view = new System.Windows.Forms.TreeView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericRows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericCols)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resultMatrix)).BeginInit();
@@ -160,7 +165,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(381, 23);
             this.button3.TabIndex = 7;
-            this.button3.Text = "File";
+            this.button3.Text = "Відкрити файл";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -176,14 +181,16 @@
             this.richTextBox1.Size = new System.Drawing.Size(383, 387);
             this.richTextBox1.TabIndex = 8;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(3, 424);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(381, 49);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Calculate";
+            this.button1.Text = "Розрахувати";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -192,10 +199,10 @@
             this.resultMatrix.AllowUserToAddRows = false;
             this.resultMatrix.AllowUserToDeleteRows = false;
             this.resultMatrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.resultMatrix.Location = new System.Drawing.Point(6, 47);
+            this.resultMatrix.Location = new System.Drawing.Point(6, 64);
             this.resultMatrix.Name = "resultMatrix";
             this.resultMatrix.ReadOnly = true;
-            this.resultMatrix.Size = new System.Drawing.Size(437, 322);
+            this.resultMatrix.Size = new System.Drawing.Size(437, 375);
             this.resultMatrix.TabIndex = 10;
             // 
             // tabControl1
@@ -217,26 +224,27 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(446, 445);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Унікальні елементи";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // boolMatrix
             // 
             this.boolMatrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.boolMatrix.Location = new System.Drawing.Point(3, 93);
+            this.boolMatrix.Location = new System.Drawing.Point(6, 63);
             this.boolMatrix.Name = "boolMatrix";
             this.boolMatrix.Size = new System.Drawing.Size(440, 348);
             this.boolMatrix.TabIndex = 5;
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.resultMatrix);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(446, 445);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Матриця подібності";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabControl2
@@ -269,6 +277,8 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.label3);
             this.tabPage4.Controls.Add(this.wpfHost);
             this.tabPage4.Controls.Add(this.calc_groups_btn);
             this.tabPage4.Controls.Add(this.prec_groupList);
@@ -305,9 +315,9 @@
             // 
             // prec_groupList
             // 
-            this.prec_groupList.Location = new System.Drawing.Point(6, 270);
+            this.prec_groupList.Location = new System.Drawing.Point(6, 288);
             this.prec_groupList.Name = "prec_groupList";
-            this.prec_groupList.Size = new System.Drawing.Size(420, 203);
+            this.prec_groupList.Size = new System.Drawing.Size(420, 185);
             this.prec_groupList.TabIndex = 1;
             this.prec_groupList.UseCompatibleStateImageBehavior = false;
             this.prec_groupList.View = System.Windows.Forms.View.Details;
@@ -315,9 +325,9 @@
             // 
             // groupList
             // 
-            this.groupList.Location = new System.Drawing.Point(6, 59);
+            this.groupList.Location = new System.Drawing.Point(6, 73);
             this.groupList.Name = "groupList";
-            this.groupList.Size = new System.Drawing.Size(420, 205);
+            this.groupList.Size = new System.Drawing.Size(420, 191);
             this.groupList.TabIndex = 0;
             this.groupList.UseCompatibleStateImageBehavior = false;
             this.groupList.View = System.Windows.Forms.View.Details;
@@ -326,6 +336,8 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.label2);
+            this.tabPage5.Controls.Add(this.label1);
             this.tabPage5.Controls.Add(this.vmodules_list);
             this.tabPage5.Controls.Add(this.button4);
             this.tabPage5.Controls.Add(this.modules_view);
@@ -339,7 +351,7 @@
             // 
             // vmodules_list
             // 
-            this.vmodules_list.Location = new System.Drawing.Point(374, 53);
+            this.vmodules_list.Location = new System.Drawing.Point(372, 72);
             this.vmodules_list.Name = "vmodules_list";
             this.vmodules_list.Size = new System.Drawing.Size(360, 213);
             this.vmodules_list.TabIndex = 4;
@@ -350,7 +362,7 @@
             // 
             this.button4.Location = new System.Drawing.Point(8, 6);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 41);
+            this.button4.Size = new System.Drawing.Size(358, 41);
             this.button4.TabIndex = 2;
             this.button4.Text = "Сформувати модулі";
             this.button4.UseVisualStyleBackColor = true;
@@ -358,7 +370,7 @@
             // 
             // modules_view
             // 
-            this.modules_view.Location = new System.Drawing.Point(8, 53);
+            this.modules_view.Location = new System.Drawing.Point(6, 72);
             this.modules_view.Name = "modules_view";
             this.modules_view.Size = new System.Drawing.Size(360, 403);
             this.modules_view.TabIndex = 0;
@@ -372,6 +384,52 @@
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Структура";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(369, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Уточнені модулі";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Модулі";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Групи";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 272);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Уточнені групи";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label5.Location = new System.Drawing.Point(6, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(159, 20);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Матриця подібності";
             // 
             // Form1
             // 
@@ -397,10 +455,13 @@
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.boolMatrix)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,6 +496,11 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListView vmodules_list;
         private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }
 
