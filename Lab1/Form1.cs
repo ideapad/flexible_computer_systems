@@ -323,6 +323,8 @@ namespace Lab1
 
             modules_view.ExpandAll();
             vmodules_list.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+
+            button5_Click(sender, e);
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -331,5 +333,48 @@ namespace Lab1
                 button1.Enabled = true;
             else button1.Enabled = false;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            GraphVisual.setPanels(basicStructure, optimizedStructure);
+            GraphVisual.setSrtucture();
+        }
+
+        private void basicStructure_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = basicStructure.CreateGraphics();
+            Pen p = new Pen(Color.Black, 2);
+            foreach (Line l in GraphVisual.lines)
+            {
+                g.DrawLine(new Pen(l.c, 2), l.x.x, l.x.y, l.y.x, l.y.y);
+            }
+            foreach (TextGraphics t in GraphVisual.textGraphics)
+            {
+                g.DrawString(t.s, t.f, new Pen(t.c, 1).Brush, t.x.x, t.x.y);
+            }
+            foreach (Arc a in GraphVisual.arcs)
+            {
+                g.DrawArc(p, a.rect, a.startAngle, a.endAngle);
+            }
+        }
+
+        private void optimizedStructure_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = optimizedStructure.CreateGraphics();
+            Pen p = new Pen(Color.Black, 2);
+            foreach (Line l in GraphVisual.lines1)
+            {
+                g.DrawLine(new Pen(l.c, 2), l.x.x, l.x.y, l.y.x, l.y.y);
+            }
+            foreach (TextGraphics t in GraphVisual.textGraphics1)
+            {
+                g.DrawString(t.s, t.f, new Pen(t.c, 1).Brush, t.x.x, t.x.y);
+            }
+            foreach (Arc a in GraphVisual.arcs1)
+            {
+                g.DrawArc(p, a.rect, a.startAngle, a.endAngle);
+            }
+        }
+
     }
 }

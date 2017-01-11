@@ -188,8 +188,6 @@ E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.GraphVisual.
 E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.Properties.Resources.resources
 E:\Repos\100DaysOfCode\100-days-of-code\Lab GKS\Lab1\obj\Debug\Lab1.csproj.GenerateResource.Cache
 E:\Repos\flexible_computer_systems\Lab1\bin\Debug\Lab1.exe.config
-E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1.exe
-E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1.pdb
 E:\Repos\flexible_computer_systems\Lab1\bin\Debug\Lab1.exe
 E:\Repos\flexible_computer_systems\Lab1\bin\Debug\Lab1.pdb
 E:\Repos\flexible_computer_systems\Lab1\bin\Debug\Combinatorics.dll
@@ -209,7 +207,6 @@ E:\Repos\flexible_computer_systems\Lab1\bin\Debug\QuickGraph.xml
 E:\Repos\flexible_computer_systems\Lab1\bin\Debug\QuickGraph.Data.xml
 E:\Repos\flexible_computer_systems\Lab1\bin\Debug\QuickGraph.Graphviz.xml
 E:\Repos\flexible_computer_systems\Lab1\bin\Debug\QuickGraph.Serialization.xml
-E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1.csprojResolveAssemblyReference.cache
 E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Templates\template.baml
 E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1_MarkupCompile.cache
 E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1.g.resources
@@ -218,3 +215,5 @@ E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1.Form2.resources
 E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1.GraphVisual.resources
 E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1.Properties.Resources.resources
 E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1.csproj.GenerateResource.Cache
+E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1.exe
+E:\Repos\flexible_computer_systems\Lab1\obj\Debug\Lab1.pdb
